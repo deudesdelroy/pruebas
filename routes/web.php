@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ChargesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','App\Http\Controllers\PersonasController@index');
+Route::get('/crear','App\Http\Controllers\PersonasController@create')->name('personas.crear');
+Route::get('/editar','App\Http\Controllers\PersonasController@edit')->name('personas.editar');

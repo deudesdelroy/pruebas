@@ -2,15 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Charges;
+use App\Models\Personas;
 use Illuminate\Http\Request;
 
-class ChargesController extends Controller
+class PersonasController extends Controller
 {
 
     public function index()
     {
-        //
+        return view('inicio');
     }
 
 
@@ -26,25 +26,25 @@ class ChargesController extends Controller
     }
 
 
-    public function show(Charges $charges)
+    public function show(Personas $personas)
     {
         //
     }
 
 
-    public function edit(Charges $charges)
+    public function edit(Personas $personas)
     {
         //
     }
 
 
-    public function update(Request $request, Charges $charges)
+    public function update(Request $request, Personas $personas)
     {
         //
     }
 
 
-    public function destroy(Charges $charges)
+    public function destroy(Personas $personas)
     {
         //
     }
